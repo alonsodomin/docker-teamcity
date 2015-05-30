@@ -16,3 +16,5 @@ COPY docker-entrypoint.sh /docker-entrypoint.sh
 EXPOSE 8111
 
 ENTRYPOINT [ "/docker-entrypoint.sh" ]
+
+CMD [ "start" ]
