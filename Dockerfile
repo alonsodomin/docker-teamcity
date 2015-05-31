@@ -1,4 +1,4 @@
-FROM java:7-jre
+FROM java:8-jre
 
 MAINTAINER Antonio Alonso Dominguez "alonso@codenibbles.com"
 
