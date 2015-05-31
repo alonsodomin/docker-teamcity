@@ -1,0 +1,21 @@
+db:
+  image: mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: pa55w0rd
+    MYSQL_DATABASE: teamcity
+    MYSQL_USER: teamcity_user
+    MYSQL_PASSWORD: pa55w0rd
+server:
+  build: /vagrant/server
+  ports:
+    - 8111:8111
+  links:
+    - db:mysql
+  environment:
+    DATABASE: mysql
+agent:
+  build: /vagrant/agent
+  ports:
+    - 9090:9090
+  volumes:
+    - /vagrant/test/agent:/etc/teamcity-agent
