@@ -13,6 +13,8 @@ server:
     - db:mysql
   environment:
     DATABASE: mysql
+  volumes:
+    - /var/lib/teamcity:/var/lib/teamcity
 agent:
   build: /vagrant/agent
   ports:
