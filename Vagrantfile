@@ -17,4 +17,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :docker, version: "latest"
   config.vm.provision :docker_compose, yml: "/vagrant/test/docker-compose.yml", rebuild: true
 
+  config.vm.provision :shell, path: "test/download_mysql_driver.sh"
+
 end

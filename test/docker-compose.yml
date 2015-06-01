@@ -11,13 +11,13 @@ server:
     - 8111:8111
   links:
     - db:mysql
-  environment:
-    DATABASE: mysql
   volumes:
     - /var/lib/teamcity:/var/lib/teamcity
 agent:
   build: /vagrant/agent
   ports:
     - 9090:9090
+  links:
+    - server:teamcity
   volumes:
     - /vagrant/test/agent:/etc/teamcity-agent
