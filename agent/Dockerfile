@@ -24,6 +24,6 @@ EXPOSE 9090
 
 VOLUME [ "/etc/teamcity-agent" ]
 
-WORKDIR $TEAMCITY_AGENT_HOME
+WORKDIR /opt/lib/teamcity-agent
 
 ENTRYPOINT [ "/docker-entrypoint.sh" ]

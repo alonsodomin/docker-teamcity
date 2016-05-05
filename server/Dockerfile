@@ -16,7 +16,7 @@ RUN mkdir -p /opt/lib && \
 
 VOLUME [ "/var/lib/teamcity" ]
 
-WORKDIR $TEAMCITY_HOME
+WORKDIR /opt/lib/teamcity
 
 EXPOSE 8111
 
