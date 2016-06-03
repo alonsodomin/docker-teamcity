@@ -2,7 +2,7 @@ FROM java:8-jre
 
 MAINTAINER Antonio Alonso Dominguez "alonso@codenibbles.com"
 
-ENV TEAMCITY_VERSION 9.0.4
+ENV TEAMCITY_VERSION 9.1.7
 ENV TEAMCITY_HOME /opt/lib/teamcity
 ENV TEAMCITY_DATA_PATH /var/lib/teamcity
 
