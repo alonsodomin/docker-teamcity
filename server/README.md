@@ -1,5 +1,7 @@
 # Docker TeamCity Server
 
+[![](https://badge.imagelayers.io/alonsodomin/teamcity-server:latest.svg)](https://imagelayers.io/?images=alonsodomin/teamcity-server:latest 'Get your own badge on imagelayers.io')
+
 [TeamCity](https://www.jetbrains.com/teamcity) Build Server Docker Container
 
 ## Starting the container

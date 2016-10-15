@@ -1,11 +1,13 @@
 # Docker TeamCity Agent
 
+[![](https://badge.imagelayers.io/alonsodomin/teamcity-agent:latest.svg)](https://imagelayers.io/?images=alonsodomin/teamcity-agent:latest 'Get your own badge on imagelayers.io')
+
 [TeamCity](https://www.jetbrains.com/teamcity) Build Agent Docker Container
 
 ## Starting the container
 
 Before starting the agent, ensure that you have a TeamCity build server instance reachable in your network.
-Otherwise the agent won't be much useful. If you don't know how to start, this 
+Otherwise the agent won't be much useful. If you don't know how to start, this
 [TeamCity Docker container](https://registry.hub.docker.com/u/alonsodomin/teamcity-server/) could be a good
 starting point.
 
@@ -29,7 +31,7 @@ docker run -d --name some_teamcity-agent -e TEAMCITY_PORT_8111_TCP_ADDR=<teamcit
 ### Custom configuration
 
 We can also provide the agent with our custom-made configuration file in which we can configure the URL that will
-be used to connect with the build server, among other things. An 
+be used to connect with the build server, among other things. An
 [example](https://github.com/alonsodomin/docker-teamcity/blob/master/test/agent/buildAgent.properties)
 configuration file can be found in the source repository.
 
@@ -39,4 +41,3 @@ in the Docker container:
 ```
 docker run -d --name some_teamcity-agent -v /path/to/my/conf:/etc/teamcity-agent alonsodomin/teamcity-agent
 ```
-
